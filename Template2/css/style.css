@@ -6,7 +6,7 @@
 
 body {
     background-color: white;
-    font-family: 'League Spartan', sans-serif;
+    font-family: "League Spartan", sans-serif;
 }
 
 /* Navbar */
@@ -26,9 +26,9 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
-
 }
-.nav-section2{
+
+.nav-section2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -64,7 +64,7 @@ body {
     flex-basis: 800px;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
@@ -106,8 +106,7 @@ body {
     display: block;
 }
 
-
-.nav-btn{
+.nav-btn {
     display: flex;
     gap: 25px;
     font-size: 20px;
@@ -130,7 +129,8 @@ body {
     border-radius: 100px;
     color: white;
     padding: 12px 22px;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
 }
 
 .nav-login:hover {
@@ -142,32 +142,31 @@ body {
     text-align: center;
     cursor: pointer;
 }
-.nav-ham a{
+
+.nav-ham a {
     color: #717275;
-
 }
-
 
 @media only screen and (max-width: 768px) {
     .nav-contain {
         max-width: 720px;
     }
 
-    .nav-section{
+    .nav-section {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 20px;
     }
-    .nav-section2{
+
+    .nav-section2 {
         gap: 20px;
     }
 
     .nav-ham {
-        display:flex;
+        display: flex;
     }
 
-    .nav-items{
-        /* display: none; */
+    .nav-items {
         flex-wrap: wrap;
         text-align: center;
     }
@@ -176,30 +175,39 @@ body {
         max-width: 720px;
         width: 100%;
     }
+
     .dropdown-content {
         position: static;
         width: 100%;
     }
-    .nav-btn{
-        /* display: none; */
+
+    .nav-btn {
         flex-direction: column;
         align-items: center;
         max-width: 720px;
         width: 100%;
     }
-    
-    
-    
 
+    .nav-links {
+        display: none;
+        /* Hide by default on smaller screens */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
 }
 
 /* @media only screen and (max-width: 449px) {
-
-} */
+  
+  } */
 
 /* Home */
 
-.home-bg{
+.home-bg {
     background-image: url(../Images/Home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -208,7 +216,8 @@ body {
     padding: 150px 0;
     z-index: 0;
 }
-.bg-over{
+
+.bg-over {
     background: #5d52ba;
     position: absolute;
     opacity: 0.85;
@@ -218,35 +227,40 @@ body {
     height: 100%;
     z-index: -1;
 }
-.home-contain{
+
+.home-contain {
     max-width: 1320px;
     margin: 0 auto;
 }
-.home-box{
+
+.home-box {
     display: flex;
     flex-wrap: wrap;
     padding: 0 20px;
 }
-.home-box1{
+
+.home-box1 {
     margin-top: 48px;
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 25px;
-    margin-bottom: 20px;
 }
-.home-box1 h6{
+
+.home-box1 h6 {
     color: white;
     font-size: 22px;
     font-weight: 600;
     z-index: 1;
 }
-.home-box1 h1{
+
+.home-box1 h1 {
     color: white;
     font-size: 62px;
     font-weight: 700;
 }
-.home-box1 a{
+
+.home-box1 a {
     text-decoration: none;
     background: transparent;
     color: #0dcaf0;
@@ -254,13 +268,17 @@ body {
     border: 2px solid #0dcaf0;
     border-radius: 100px;
     padding: 15px 20px;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 20px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.home-box1 a:hover{
+
+.home-box1 a:hover {
     background-color: #0dcaf0;
-    color:white;
+    color: white;
 }
-.home-box2{
+
+.home-box2 {
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -268,17 +286,20 @@ body {
     border-radius: 10px;
     gap: 25px;
 }
-.home-box2 h3{
+
+.home-box2 h3 {
     font-size: 36px;
     font-weight: 600;
     color: white;
 }
-.home-input{
+
+.home-input {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
 }
-.home-input1{
+
+.home-input1 {
     display: flex;
     align-items: center;
     border: 2px solid white;
@@ -286,9 +307,9 @@ body {
     border-radius: 100px;
     padding: 12px 12px;
     gap: 10px;
-
 }
-.home-input1 input{
+
+.home-input1 input {
     color: #717275;
     border: 2px solid transparent;
     border-radius: 100px;
@@ -297,31 +318,36 @@ body {
     font-weight: 400;
     width: 100%;
 }
-.home-btn{
+
+.home-btn {
     background-color: #5d52ba;
     border: none;
     color: white;
     padding: 10px 12px;
-    font-size: 20px ;
+    font-size: 20px;
     font-weight: 400;
     transition: all 0.3s;
     border-radius: 30px;
 }
-.home-btn:hover{
+
+.home-btn:hover {
     background-color: #0dcaf0;
 }
-.home-text{
+
+.home-text {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 15px;
 }
-.home-text span{
+
+.home-text span {
     color: white;
     font-size: 16px;
     font-weight: 400;
 }
-.home-text a{
+
+.home-text a {
     text-decoration: none;
     color: white;
     border: 1px solid white;
@@ -331,16 +357,20 @@ body {
     font-weight: 400;
     transition: all 0.3s;
 }
-.home-text a:hover{
+
+.home-text a:hover {
     background-color: white;
     color: #5d52ba;
 }
 
 @media only screen and (max-width: 768px) {
-    .home-box1,.home-box2{
+
+    .home-box1,
+    .home-box2 {
         width: 100%;
     }
-    .home-input1{
+
+    .home-input1 {
         width: 100%;
     }
 }
