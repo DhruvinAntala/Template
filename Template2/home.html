@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotto Job</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <div class="nav-contain">
+            <div class="nav-section">
+
+                <a href="#" class="nav-logo">
+                    <img src="Images/logo.png" alt="logo" width="65" height="65">
+                    <div class="nav-logo2">
+                        <strong>Gotto</strong>
+                        <small>Online Job Portal</small>
+                    </div>
+                </a>
+
+
+                <div class="nav-ham">
+                    <a href="" onclick="navbar()">
+                        <i class="fa fa-bars" aria-hidden="true" style="width: 30px; height: 35px;"></i>
+                    </a>
+                </div>
+
+
+
+                <div class="nav-links">
+                    <ul class="nav-items">
+                        <li class=""><a href="#">Homepage</a></li>
+                        <li><a href="#">About Gotto</a></li>
+                        <li class="dropdown">
+                            <a href="dropbtn">Pages
+                                <img src="Images/ddicon.png" alt="" width="14" height="14">
+
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="">Job Listing</a>
+                                <a href="">Job Detail</a>
+
+                            </div>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-btn">
+                    <ul class="nav-btnul">
+                        <li><a href="" class="nav-reg">Register</a></li>
+                        <li><a href="" class="nav-login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- Home -->
+
+        <section class="home-bg">
+
+        </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <script>
+        function navbar(){
+            var x = document.getElementsByClassName("nav-items");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

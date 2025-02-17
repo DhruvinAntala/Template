@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: white;
+    padding: 15px 0px;
+}
+
+.nav-contain {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-section {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+}
+
+.nav-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-logo2 strong {
+    font-size: 32px;
+    color: #5d52ba;
+}
+
+.nav-logo2 small {
+    color: #f65129;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nav-links {
+    flex-basis: 800px
+}
+
+.nav-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #717275;
+}
+
+.nav-links li a:hover {
+    color: #f65129;
+}
+
+.nav-links li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.nav-btnul {
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.nav-reg {
+    text-decoration: none;
+    color: #717275;
+}
+
+.nav-reg:hover {
+    color: #f65129;
+}
+
+.nav-login {
+    background-color: #f65129;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    color: white;
+    padding: 12px 22px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.nav-login:hover {
+    background-color: #0dcaf0;
+}
+
+.nav-ham {
+    display: none;
+    text-align: center;
+    cursor: pointer;
+}
+.nav-ham a{
+    color: #717275;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-contain {
+        max-width: 720px;
+    }
+
+    .nav-section {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .nav-ham {
+        display:flex;
+    }
+
+    .nav-items{
+        /* display: none; */
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .nav-items li {
+        max-width: 720px;
+        width: 100%;
+    }
+    .dropdown-content {
+        position: static;
+        width: 100%;
+    }
+    .nav-btnul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-btn{
+        /* display: none; */
+        max-width: 720px;
+        width: 100%;
+    }
+    
+    
+
+}
+
+/* @media only screen and (max-width: 449px) {
+
+} */
+
+/* Home */
+
+.home-bg{
+    background-image: url(../Images/Home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
