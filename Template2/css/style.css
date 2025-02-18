@@ -9,6 +9,29 @@ body {
     font-family: "League Spartan", sans-serif;
 }
 
+.contain {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: #f65129;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 15px 20px;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: #0dcaf0;
+}
+
+
+
+
 /* Navbar */
 
 .navbar {
@@ -16,11 +39,7 @@ body {
     padding: 15px 0px;
 }
 
-.nav-contain {
-    max-width: 1320px;
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 .nav-section {
     display: flex;
@@ -122,21 +141,6 @@ body {
     color: #f65129;
 }
 
-.nav-login {
-    background-color: #f65129;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 100px;
-    color: white;
-    padding: 12px 22px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out;
-}
-
-.nav-login:hover {
-    background-color: #0dcaf0;
-}
-
 .nav-ham {
     display: none;
     text-align: center;
@@ -190,7 +194,6 @@ body {
 
     .nav-links {
         display: none;
-        /* Hide by default on smaller screens */
         flex-direction: column;
         width: 100%;
         text-align: center;
@@ -201,9 +204,6 @@ body {
     }
 }
 
-/* @media only screen and (max-width: 449px) {
-  
-  } */
 
 /* Home */
 
@@ -226,11 +226,6 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-}
-
-.home-contain {
-    max-width: 1320px;
-    margin: 0 auto;
 }
 
 .home-box {
@@ -377,11 +372,6 @@ body {
     padding: 150px 0;
 }
 
-.cat-contain {
-    max-width: 1320px;
-    margin: 0 auto;
-}
-
 .cat-box {
     display: flex;
     flex-direction: column;
@@ -452,10 +442,6 @@ body {
 
 /* About */
 
-.abt-contain {
-    max-width: 1320px;
-    margin: 0 auto;
-}
 
 .abt-block {
     display: flex;
@@ -577,19 +563,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.abt-ig a {
-    text-decoration: none;
-    color: white;
-    background-color: #f65129;
-    border: 2px solid transparent;
-    border-radius: 100px;
-    padding: 15px 20px;
-    transition: all 0.5s;
-}
-
-.abt-ig a:hover {
-    background-color: #0dcaf0;
-}
 
 @media only screen and (max-width: 768px) {
 
@@ -607,11 +580,6 @@ body {
 
 .jf-bg {
     padding: 100px 0px;
-}
-
-.jf-contain {
-    max-width: 1320px;
-    margin: 0 auto;
 }
 
 .jf-block {
@@ -651,25 +619,27 @@ body {
 
 .jf-sec {
     display: flex;
-    /* align-items: center; */
     gap: 20px;
     border-radius: 10px;
     padding: 25px;
     transition: all 0.6s;
 }
-.jf-sec:hover{
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+
+.jf-sec:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
-.jf-secbg{
+
+.jf-secbg {
     display: flex;
     align-items: center;
     gap: 20px;
     border-radius: 10px;
     padding: 25px;
     transition: all 0.5s;
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
 }
+
 .jf-sec1 {
     border-radius: 100px;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
@@ -687,11 +657,10 @@ body {
     align-items: center;
     width: 100%;
 }
+
 .jf-text {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     width: 70%;
 }
 
@@ -712,8 +681,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* width: 100%; */
-    /* gap: 40px; */
 }
 
 .jf-text2 p {
@@ -724,16 +691,18 @@ body {
     gap: 10px;
     text-align: center;
 }
-.jf-text2 p i{
+
+.jf-text2 p i {
     color: #5d52ba;
     padding-right: 5px;
 }
-.jf-btn{
+
+.jf-btn {
     display: flex;
-    /* align-items: center; */
     gap: 10px;
 }
-.jf-btn1{
+
+.jf-btn1 {
     text-decoration: none;
     color: white;
     background-color: #5d52ba;
@@ -744,9 +713,10 @@ body {
     font-weight: 400;
     transition: all 0.5s;
 }
-.jf-btn2{
+
+.jf-btn2 {
     text-decoration: none;
-    color:#5d52ba;
+    color: #5d52ba;
     background-color: #f0f8ff;
     border: 2px solid transparent;
     border-radius: 100px;
@@ -755,23 +725,11 @@ body {
     font-weight: 400;
     transition: all 0.5s;
 }
-.jf-btn1:hover,.jf-btn2:hover{
+
+.jf-btn1:hover,
+.jf-btn2:hover {
     background-color: #f65129;
     color: white;
-}
-
-
-.jf-sec3 a{
-    text-decoration: none;
-    color: white;
-    background-color: #f65129;
-    border: 2px solid transparent;
-    border-radius: 100px;
-    padding: 15px 20px;
-    transition: all 0.5s;
-}
-.jf-sec3 a:hover {
-    background-color: #0dcaf0;
 }
 
 .shop-page {
@@ -782,7 +740,7 @@ body {
 
 }
 
-.shop-pageitem{
+.shop-pageitem {
     font-size: 15px;
     font-weight: 400;
 }
@@ -807,7 +765,108 @@ body {
 
 .shop-pageitem:hover {
     .shop-pagelink {
-        background-color:  #0dcaf0;
+        background-color: #0dcaf0;
         color: white;
+    }
+}
+
+/* Bottom */
+
+
+
+.bt-block {
+    display: flex;
+    margin: 20px;
+    gap: 30px;
+
+}
+
+.bt-block1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #5d52ba;
+    border-radius: 30px 0 0 30px;
+    padding: 80px 60px;
+}
+
+.bt-head {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bt-head h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+
+.bt-head p {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.bt-text {
+    display: flex;
+    gap: 30px;
+
+}
+
+.bt-text1 p {
+    color: white;
+    font-size: 62px;
+    font-weight: 400;
+}
+
+.bt-text1 span {
+    color: #0dcaf0;
+
+}
+.bt-block2{
+    position: relative;
+}
+.bt-block2 img{
+    max-width: 600px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 30px 30px 0;
+}
+.bt-yt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bt-yt i{
+    background-color: #f65129;
+    font-size: 48px;
+    color: white;
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+    animation: youtube 2s infinite;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes youtube{
+    0%{
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100%{
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .bt-block{
+        flex-wrap: wrap;
+    }
+    .bt-block2 img{
+        max-width: 100%;
     }
 }
