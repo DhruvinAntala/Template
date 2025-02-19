@@ -682,7 +682,7 @@
             <div class="contain">
                 <div class="rvw-block">
                     <h2>Happy customers</h2>
-                    <div class="rvw-block1 owl-carousel ">
+                    <div class="rvw-block1">
                         <div class="rvw-card">
 
                             <div class="rvw-box1">
@@ -736,7 +736,7 @@
                                     incididunt.</h4>
                             </div>
                         </div>
-
+<!-- 
                         <div class="rvw-card">
 
                             <div class="rvw-box1">
@@ -816,11 +816,11 @@
                                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt.</h4>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="rvw-block2">
-                        <button role="button" class="rvw-dot owl-dot"><span></span></button>
+                        <button role="button" class="rvw-dot rvw-dotactive"><span></span></button>
                         <button role="button" class="rvw-dot"><span></span></button>
                         <button role="button" class="rvw-dot"><span></span></button>
                     </div>
@@ -861,29 +861,7 @@
                 navLinks.style.display = "flex";
             }
         }
-        $(".rvw-block1").owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 2000, //2000ms = 2s;
-            autoplayHoverPause: true,
-        });
-
-        $(document).ready(function () {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: false,
-                items:1,
-            });
-
-            $('.owl-next').click(function () {
-                owl.trigger('next.owl.carousel');
-            });
-            $('.owl-prev').click(function () {
-                owl.trigger('prev.owl.carousel');
-            });
-        });
+        
     </script>
 </body>
 
