@@ -127,6 +127,7 @@ body {
     }
 
 }
+
 @media only screen and (max-width: 449px) {
     .col-m-1 {
         width: 8.33%;
@@ -1058,8 +1059,8 @@ body {
 }
 
 .rj-block2 {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
 
 }
 
@@ -1070,6 +1071,7 @@ body {
     border-radius: 10px;
     transition: all 0.5s ease;
     margin: 20px;
+
 }
 
 .rj-card:hover {
@@ -1082,7 +1084,7 @@ body {
 }
 
 .rj-box1 a img {
-    max-width: 100%;
+    max-width: 400px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -1178,10 +1180,20 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
-    .rj-block3 {
-        justify-content: flex-start;
+    .rj-block2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
     }
+    
+}
+@media only screen and (max-width: 449px) {
+    .rj-block2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    
 }
 
 /* Review */
@@ -1217,7 +1229,7 @@ body {
     background-color: white;
     border-radius: 30px;
     padding: 30px;
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 .rvw-box1 {
@@ -1272,4 +1284,9 @@ body {
     color: #717275;
     font-size: 32px;
     font-weight: 600;
+}
+
+.rvw-block2 {
+    display: flex;
+    gap: 10px;
 }
