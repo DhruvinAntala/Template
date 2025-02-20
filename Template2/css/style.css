@@ -29,7 +29,25 @@ body {
     background-color: #0dcaf0;
 }
 
-
+.line-animation {
+    position: relative;
+}
+.line-animation:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+.line-animation:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
 
 
 /* Navbar */
@@ -290,7 +308,6 @@ body {
 
 .home-input {
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 25px;
 }
 
@@ -307,7 +324,6 @@ body {
 .home-input1 input {
     color: #717275;
     border: 2px solid transparent;
-    border-radius: 100px;
     outline: none;
     font-size: 16px;
     font-weight: 400;
@@ -517,6 +533,10 @@ body {
 .abt-text1 p a {
     color: #5d52ba;
     text-decoration: none;
+    transition: all 0.5s;
+}
+.abt-text1 p a:hover{
+    color: #f65129;
 }
 
 .abt-text2 {
@@ -542,6 +562,7 @@ body {
 .abt-btn2 {
     text-decoration: none;
     color: white;
+    padding-bottom: 5px;
 }
 
 .abt-block3 {
@@ -1480,8 +1501,9 @@ body {
 .foot-arrow:hover {
     background: #f65129;
 }
+
 @media only screen and (max-width: 768px) {
     .ftbt-box {
-        grid-template-columns: 2fr ;
+        grid-template-columns: 2fr;
     }
 }
